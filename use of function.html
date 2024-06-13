@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    #body{
+      background-color: lavender;
+      color: black;
+    }
+    h3{
+      color: red;
+    }
+  </style>
+</head>
+<body id="body">
+<script>
+  function changeStyle(){
+    let body = document.getElementById('body');
+    let background = document.getElementById('background').value;
+    let color = document.getElementById('color').value;
+
+    body.style.background =background;
+    body.style.color = color;
+  }
+</script>
+<h3>Make sure you enter valid colours</h3>
+<form id="myForm">
+  <label for="background">Enter background color</label><br>
+  <input type="text" id="background" value="lavender"><br>
+  <label for="color">Enter text color</label><br><br>
+  <input type="text" id="color" value="white"><br><br>
+  <input type="button" onclick="changeStyle()" value="change">
+</form>
+<script>
+  let age = 17;
+  age = age + 3;
+  console.log(age);
+  alert(age.value)
+</script>
+</body>
+</html>

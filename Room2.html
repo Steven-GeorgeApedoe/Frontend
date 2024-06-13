@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eatery Restaurant Room 2</title>
+  <style>
+    #heading{
+      text-align: center;
+      font-size: larger;
+      border: solid;
+      padding: 2px;
+      color: #324512;
+      background-color: #b3d4fc;
+    }
+    #eatery{
+      text-align: left;
+      font-size: large;
+      font-weight: bolder;
+      font-family: cursive;
+    }
+    p{
+      color: rgb(255,255,255);
+      font-family: "Times New Roman",sans-serif;
+    }
+    #menu{
+      border: solid;
+      padding: 1px;
+      margin: 2px;
+      text-align: center;
+    }
+    table{
+      padding: 2px;
+      display: flex;justify-content: center;
+    }
+    tr{
+      border: solid;
+      padding: 1px;
+      margin: auto;
+    }
+    td{
+      text-align: justify;
+      border: solid #4e4ebd;
+      margin: 1px;
+    }
+    th{
+      border: solid;
+      padding: 1px;
+      text-align: justify-all;
+      margin: auto;
+    }
+    button:hover{
+      color: #999999;
+    }
+    button:active{
+      color: red;
+    }
+    body{
+      background-color: #b3b3f5;
+    }
+  </style>
+</head>
+<body>
+<!--Creating a header-->
+<div>
+  <header>
+    <h2 id="heading">Welcome to room 2</h2><br><br>
+    <p id="eatery">Eatery Manager</p>
+    <div style="display: flex;justify-content: center">
+      <img src="data:image/jpeg;base64,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
+      AAAAAAAAAAAAAAAAAAAAAAAMvFtoh3FxYH/9k=" alt="Room 2 image">
+    </div>
+  </header>
+</div>
+<!--Creating a main section-->
+<main>
+  <div>
+    <p>About Room2</p>
+    <p>A meal can be elevated by a restaurant’s ambiance, service, accommodations,
+      opportunities for togetherness, and timing. Of course at the wrong location,
+      these things can make a night memorable for all the wrong reasons.
+      But at a restaurant like The Keep, each of these components of private dining become
+      something special.<br>
+
+    When you go out to eat, based on the restaurant you are going to,
+      you sort of know what to expect. And you also know there are things you can’t control.
+      For example, the other diners. They may be loud, demanding, and even invasive of your space.
+
+      One of the great aspects of private dining, especially at restaurants with private dining rooms,
+      is that to a large degree you can set the ambiance. You may be able to adjust the lighting in the
+      room, have a say in the table decor, and control the sounds in the space
+      (do you want music, do you want to capture some of the ambient sounds of the restaurant, etc).</p><br><br>
+    <strong>In order for us to serve you to your health, you will neeed to go through our Allergy checklist</strong>
+  </div>
+<!--  Creating a drop-down for country selector-->
+  <div>
+    <p>Select your country Origin</p>
+    <form>
+      <label for="Country"></label>
+      <select id="Country">
+        <option value="option1">Ghana</option> <option value="option2">Senegal</option>
+        <option value="option3">Burkina Faso</option> <option value="option4">USA</option>
+        <option value="option5">Mali</option> <option value="option6">Great Britain</option>
+        <option value="option7">South Africa</option> <option value="option8">Angola</option>
+        <option value="option9">Togo</option> <option value="option10">Liberia</option>
+        <option value="option11">Nigeria</option> <option value="option12">Sierra Leone</option>
+      </select>
+
+      <p>Tick the boxes below to record your allergies</p>
+      <label for="milk">Milk</label>
+      <input type="checkbox" id="milk"><br>
+      <label for="cheese">Cheese</label>
+      <input type="checkbox" id="cheese"><br>
+      <label for="meat">Meat</label>
+      <input type="checkbox" id="meat"><br>
+      <label for="corn">Corn</label>
+      <input type="checkbox" id="corn"><br>
+      <button>OK</button>
+      <!---Creating a table  with rows and columns for food, drinks and prices respectively-->
+      <p id="menu">Menu</p>
+      <table>
+        <tr>
+          <th>Drinks(Ghc5.00 each)</th>
+          <th>Food(Ghc30.00 each)</th>
+        </tr>
+        <tr>
+          <td>Coke</td>
+          <td>Omutuo/groundnut soup/chicken/cow meat/salmon fish</td>
+        </tr>
+        <tr>
+          <td>Sprite</td>
+          <td>Fufu/chicken light soup/cow meat/chicken/salmon fish</td>
+        </tr>
+        <tr>
+          <td>Fanta Cocktail</td>
+          <td>Banku/Okro soup/cow meat/chicken/fish</td>
+        </tr>
+        <tr>
+          <td>mango juice</td>
+          <td>Kokonte/palm nut soup/Chicken/Salmon fish</td>
+        </tr>
+        <tr>
+          <td>Pineapple juice</td>
+          <td>Plain rice/ corned beef stew/roasted chicken/grilled fish</td>
+        </tr>
+        <tr>
+          <td>Apple juice</td>
+          <td>Jollof/grilled chicken/Tilapia fish/grilled fish</td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <p>Select a table</p>
+  <div style="display: flex;justify-content: center">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoww-IFtKVcTiGtRf_KxgEvkz8U5_jeNpDHA&s"
+         alt="Restaurant room picture">
+  </div>
+
+<!--  Creating a drop-down for table selection -->
+  <div>
+    <label for="TableSelect"></label>
+    <select id="TableSelect">
+      <option value="option 1">Table11</option> <option value="option 2">Table12</option>
+      <option value="option 3">Table13</option> <option value="option 4">Table14</option>
+      <option value="option 5">Table15</option> <option value="option 6">Table16</option>
+      <option value="option 7">Table17</option> <option value="option 8">Table18</option>
+      <option value="option 9">Table19</option> <option value="option 10">Table20</option>
+      <option value="option 11">Table21</option> <option value="option 12">Table22</option>
+      <option value="option 13">Table23</option> <option value="option 14">Table24</option>
+      <option value="option 15">Table25</option>
+    </select>
+    <button type="button" onclick="alert('Your table selection has been recorded')">OK</button>
+    <button type="button" onclick="alert('You will go to room1')">Go to room1</button>
+  </div>
+</main>
+<!--Creating a footer-->
+<footer>
+  <nav>
+    <div>
+      <a href="http://localhost:63342/Eatery%20Manager/Eatery%20Manager/Eatery%20Manager/SignUp%20Page.
+      html?_ijt=o8g3b24kmev9ei8r8007u8tp96">Go to Sign up page
+      </a><br>
+      <a href="http://localhost:63342/Eatery%20Manager/Eatery%20Manager/Eatery%20Manager/Log%20In.html?_
+      ijt=o8g3b24kmev9ei8r8007u8tp96">Go to LogIn Page
+      </a><br>
+      <a href="http://localhost:63342/Eatery%20Manager/Eatery%20Manager/Eatery%20Manager/Home%20Page.html?
+      _ijt=6edr1juqpc7acja6taqtve6q1k">Go to Home Page
+      </a>
+    </div>
+  </nav>
+</footer>
+</body>
+</html>

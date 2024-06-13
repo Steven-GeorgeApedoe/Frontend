@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eatery manager Room1</title>
+  <!----Using internal Css styling--->
+  <style>
+    #h1{
+      text-align: center;
+      color: white;
+      border: solid black;
+    }
+    #Eatery{
+      font-size: larger;
+      font-family: cursive;
+      font-weight: bolder;
+      text-align: left;
+      color: #324512;
+    }
+    h2{
+      border: black dashed;
+      font-family: Algerian,serif;
+    }
+    p{
+      color: rgb(255,255,255);
+      font-family: "Times New Roman",sans-serif;
+    }
+    #menu{
+      border: solid;
+      padding: 1px;
+      margin: 2px;
+      text-align: center;
+    }
+    table{
+      display: flex;justify-content: center;
+    }
+    tr{
+      border: solid;
+      padding: 1px;
+      margin: auto;
+    }
+    td{
+      text-align: justify;
+      border: solid blue;
+      margin: 1px;
+    }
+    th{
+      border: solid;
+      padding: 1px;
+      text-align: justify-all;
+      margin: auto;
+    }
+    button:hover{
+      color: #999999;
+    }
+    button:active{
+      color: red;
+    }
+    #s2ok:hover{
+      color: #afafaf;
+    }
+    #s2ok:active{
+      color: red;
+    }
+    img{
+      width: 120px;
+    }
+    body{
+      background-color: rosybrown;
+    }
+  </style>
+</head>
+<body>
+<!----Bringing the header below-->
+<header>
+  <h1 id="h1">Welcome to room 1</h1>
+  <div style="display: flex; justify-content: center">
+  <img src="data:image/jpeg;base64,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"
+       alt="Centered Image">
+</div>
+  <p id="Eatery">Eatery Manager</p>
+</header>
+<!---The main in the body-->
+<main>
+  <div>
+    <h2 style="text-align: center"> About Room1</h2>
+    <p style="color: white">A meal can be elevated by a restaurant’s ambiance, service, accommodations,
+      opportunities for togetherness, and timing. Of course at the wrong location,
+      these things can make a night memorable for all the wrong reasons.
+      But at a restaurant like The Keep, each of these components of private dining become
+      something special.</p>
+
+    <p>When you go out to eat, based on the restaurant you are going to,
+      you sort of know what to expect. And you also know there are things you can’t control.
+      For example, the other diners. They may be loud, demanding, and even invasive of your space.
+
+      One of the great aspects of private dining, especially at restaurants with private dining rooms,
+      is that to a large degree you can set the ambiance. You may be able to adjust the lighting in the
+      room, have a say in the table decor, and control the sounds in the space
+      (do you want music, do you want to capture some of the ambient sounds of the restaurant, etc).
+    </p>
+  </div>
+
+  <div style="display: flex; justify-content: center;">
+    <img src="https://t4.ftcdn.net/jpg/04/84/41/29/360_F_484412923_xd4SyEyDfigx43uTBBO0PpC4JLCJlR4j.jpg"
+         alt="Centered image of bar">
+  </div>
+
+  <div>
+    <strong style="color: red; text-align: justify">
+      In order for us to serve you to your health, you will need to go through our Allergy checklist
+    </strong>
+    <!---Creating a drop-down-->
+    <p>Select your country</p>
+    <label for="Country check"></label>
+    <select id="Country check">
+      <option value="option 1`">Ghana</option>
+      <option value="option2">Burkina Faso</option>
+      <option value="option3">Mali</option>
+      <option value="option4">South Africa</option>
+      <option value="option5">Togo</option>
+    </select>
+    <!--Creating a checkbox-->
+    <p>Tick the boxes below to record your allergies</p>
+    <label for="milk">Milk</label>
+    <input type="checkbox" id="milk"><br>
+    <label for="cheese">Cheese</label>
+    <input type="checkbox" id="cheese"><br>
+    <label for="meat">Meat</label>
+    <input type="checkbox" id="meat"><br>
+    <label for="corn">Corn</label>
+    <input type="checkbox" id="corn"><br>
+    <button id="s2ok">OK</button>
+    <!---Creating a table  with rows and columns for food, drinks and prices respectively-->
+    <p id="menu">Menu</p>
+    <table>
+      <tr>
+        <th>Drinks(Ghc5.00 each)</th>
+        <th>Food(Ghc30.00 each)</th>
+      </tr>
+      <tr>
+        <td>Coke</td>
+        <td>Omutuo/groundnut soup/chicken/cow meat/salmon fish</td>
+      </tr>
+      <tr>
+        <td>Sprite</td>
+        <td>Fufu/chicken light soup/cow meat/chicken/salmon fish</td>
+      </tr>
+      <tr>
+        <td>Fanta Cocktail</td>
+        <td>Banku/Okro soup/cow meat/chicken/fish</td>
+      </tr>
+      <tr>
+        <td>mango juice</td>
+        <td>Kokonte/palm nut soup/Chicken/Salmon fish</td>
+      </tr>
+      <tr>
+        <td>Pineapple juice</td>
+        <td>Plain rice/ corned beef stew/roasted chicken/grilled fish</td>
+      </tr>
+      <tr>
+        <td>Apple juice</td>
+        <td>Jollof/grilled chicken/Tilapia fish/grilled fish</td>
+      </tr>
+    </table>
+    <p>Select a table for reservation</p>
+  </div>
+  <!---Inserting a restaurant table image--->
+  <div style="display: flex;justify-content: center">
+    <img src="https://i.pinimg.com/564x/b7/01/ee/b701ee804754f99207daca2a278ba48d.jpg"
+    alt="Centered image">
+  </div>
+
+  <!---Creating a table drop-down for table selection--->
+  <div>
+    <label for="Table selection"></label>
+    <select id="Table selection">
+      <option value="Table1">Table1</option>
+      <option value="Table2">Table2</option>
+      <option value="Table3">Table3</option>
+      <option value="Table4">Table4</option>
+      <option value="Table5">Table5</option>
+      <option value="Table6">Table6</option>
+      <option value="Table7">Table7</option>
+      <option value="Table8">Table8</option>
+      <option value="Table9">Table9</option>
+      <option value="Table10">Table10</option>
+    </select>
+
+   <br> <button onclick="alert('Your Table has been reserved!')">OK </button>
+    <button type="button" onclick="alert('You will go to room2')">Go to room2</button>
+  </div>
+</main>
+<footer>
+  <nav>
+    <a href="http://localhost:63342/Eatery%20Manager/Eatery%20Manager/Eatery%20Manager/index.html?_ijt=sbbr7eu2obimt9dot921pmj5ft">
+      Go to SignUp Page
+    </a><br>
+    <a href="http://localhost:63342/Eatery%20Manager/Eatery%20Manager/Eatery%20Manager/Log%20In.html?_ijt=kv3p75pgu5rf3g7vrfckv4h82p"
+    >Go to LogIn Page
+    </a><br>
+    <a href="http://localhost:63342/Eatery%20Manager/Eatery%20Manager/Eatery%20Manager/Home%20Page.html?_ijt=s1tji7qb3es3o1nkdpte63gocs"
+       >Home Page
+    </a>
+
+  </nav>
+</footer>
+</body>
+</html>
