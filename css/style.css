@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  display: flex;
+ justify-content:  center;
+  align-items: center;
+  min-height: 100vh;
+  background: salmon;
+}
+.main{
+  width: 420px;
+  background:#fff;
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+#logo{
+  padding: 20px;
+  width: 160px;
+  height: 900px;
+  cursor: pointer;
+  text-align:left;
+  font-family: cursive;
+  font-weight: bolder;
+  color: #fff;
+}
+.main h1{
+  font-size: 36px;
+  text-align: center;
+  color: #0c9a1f;
+}
+.main .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+ margin: 30px 0
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgb(13, 148, 24);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #000000;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+  color: #000000;
+}
+
+.input-box i{
+  position: absolute;
+  right: 20px;
+  top:50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: black;
+}
+
+.main .remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.remember-forgot label input{
+  accent-color: #000000;
+  margin-right: 2px;
+}
+
+.remember-forgot label{
+  color: black;
+}
+
+.remember-forgot a{
+  color: #000000;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover{
+  text-decoration: underline;
+}
+
+.main .btn{
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  color: #333;
+  font-weight: 900;
+}
+
+.main .btn:hover{
+  text-decoration: underline;
+  background-color: #cb9189;
+}
+
+.main .btn:active{
+  opacity: 0.5;
+  background-color:  rgba(15, 255, 255);
+  opacity: 0.4;
+}
+
+.main .register-link{
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-link p a{
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover{
+  text-decoration: underline;
+}
+
+.icons ion-icon {
+  margin-left:15%;
+  color: #8d1c1c;
+  margin-right: 10px;
+  font-size: 40px;
+  transition: 2s ease;
+}
+.icons ion-icon:hover{
+  color: rgb(59,174,209);
+}
+
+.icons a{
+  text-decoration: none;
+  color:#000;
+}
+
+p{
+  color: black;
+  text-align: center;
+  font-size: large;
+}
