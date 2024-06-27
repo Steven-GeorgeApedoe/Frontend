@@ -6,6 +6,7 @@
   width: 100%;
   background: url("https://meshdesignstudio.com/wp-content/uploads/2018/02/mesh-background-portfolio-lglines.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   position: relative;
