@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: url("https://t4.ftcdn.net/jpg/06/15/47/39/360_F_615473969_OQH56joXaYscLjIihTYSLvBzwm5VAdTa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(2px);
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10%;
+  background: #5b7091;
+}
+.logo{
+  width: 50px;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.nav_links{
+  list-style:none;
+}
+.nav_links li{
+  display: inline-block;
+  padding: 20px;
+}
+.nav_links li a{
+  text-decoration: none;
+  color: salmon;
+}
+.nav_links li a:hover{
+  color: white;
+  text-decoration: underline;
+}
+i{
+  color: #ffffff;
+}
+i:hover{
+  cursor: pointer;
+  color: salmon;
+}
+
+.container_about{
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container_about form{
+  width: 420px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 30px 40px;
+}
+h2{
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: salmon;
+}
+.input-field input{
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 20px 45px 20px 20px;
+}
+.input-field input::placeholder{
+  color: salmon;
+}
+ #email{
+  position: absolute;
+  margin-top: 15px;
+   transform: translate(-140%);
+   color: black;
+ }
+ #message{
+   position: absolute;
+   margin-top: 15px;
+   transform: translate(-140%);
+   color: black;
+ }
+ #phone{
+   position: absolute;
+   margin-top: 15px;
+   transform: translate(-140%);
+   color: black;
+ }
+button{
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  background: salmon;
+  box-shadow: 0 3px #555555;
+}
+button:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  /*color: ;*/
+  transform: scale(1.02);
+}
+button:active{
+  box-shadow: 0 6px #555555;
+  transform: translateY(4px);
+}
+
+.slogan p{
+  text-align: center;
+  margin-top: 5px;
+  font-size: 12px;
+  font-family: cursive;
+}

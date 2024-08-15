@@ -62,7 +62,8 @@ body{
 }
 
 .remember label input{
-  margin-right: 10px;
+  margin-right: 5px;
+  accent-color: black;
 }
 
 .icons ion-icon {
@@ -92,6 +93,7 @@ body{
   color: #000000;
   font-weight: bolder;
   margin-top: 20px;
+  box-shadow: 0 9px #999;
 }
 
 .button:hover{
@@ -101,10 +103,18 @@ body{
 
 .button:active{
   opacity: 0.7;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 .icons p{
   text-align: center;
   font-size: large;
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+
+.passCheck label input{
+  margin-right: 5px;
+  accent-color: black;
 }

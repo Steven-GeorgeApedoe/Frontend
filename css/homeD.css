@@ -7,6 +7,8 @@
   font-family: "Poppins",sans-serif;
 }
 
+
+
 body{
   margin: 0px;
   padding: 0px;
@@ -16,54 +18,79 @@ body{
 }
 
 
-.main1{
-  width: 100%;
+
+
+
+.background{
+  /*display: flex;*/
+  background: url("https://as1.ftcdn.net/v2/jpg/02/67/56/80/1000_F_267568050_gKkcBAI5XkpEHNpipkx2aIarNbwarCRN.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  filter: blur(5px);
 }
 
 
-nav{
-  width: 100%;
-  background-color: black;
+
+
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  z-index: 1000;
+  /*width: 100%;*/
+  background-color: #2f2c2c;
   height: 80px;
   line-height: 80px;
-  display: flex;
   justify-content: space-between;
-  padding-right: 120px;
+  /*position: absolute;*/
 }
+nav{
+  display: flex;
+  width: 100%;
+  padding-right: 120px;
 
+}
 a{
   text-decoration: none;
-  color: #fff;
-  font-size: 17px;
+  color: salmon;
+  font-size: 13px;
 }
-
-
 .logo1 a{
   font-size: 45px;
   color: salmon;
   font-weight: bold;
+  margin-left: 100px;
 }
-
-
-ul{
-  margin: 0px;
+ ul{
+   margin: 0px;
+   padding: 0;
+   padding-right: 120px;
 }
 ul li{
   float: left;
   padding: 0px 10px;
+  padding-left: 10px;
   list-style: none;
 }
-ul li a{
-
-}
+/*ul li a{*/
+/*  justify-items: right;*/
+/*}*/
 ul li a:hover{
   text-decoration: underline;
-  color: salmon;
+  color: #fff;
 }
 ul li a:active{
   opacity: 0.4;
   color: #9b514b;
 }
+
+
+
 
 
 i{
@@ -74,24 +101,50 @@ i:hover{
   color: salmon;
 }
 
+
+
+
 .content{
-  display: flex;
-  justify-content: center;
-  text-align: justify;
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  /*filter: blur(5px);*/
 }
 .content h1{
-  color: #fff;
+  font-size: 50px;
+
 }
 .content p{
-  color: #fff;
+  padding: 0px 50px;
+  font-size: 20px;
+  /*font-weight: bold;*/
+  font-size: larger;
+
 }
 
-
-.header{
-  background: url("https://as1.ftcdn.net/v2/jpg/02/67/56/80/1000_F_267568050_gKkcBAI5XkpEHNpipkx2aIarNbwarCRN.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  opacity: 0.8;
+button{
+  width: 30%;
+  height: 45px;
+  color: #fff;
+  border-radius: 20px;
+  border-color: #41221e;
+  background: transparent;
+  margin-top: 20px;
+  font-size: 14.5px;
+  font-family: "Times New Roman",Serif;
+  font-weight: bolder;
+}
+button:hover{
+  background: salmon;
+  cursor: pointer;
+  transition: 2s ease;
+}
+button:active{
+  background: #6c1313;
+  border-color: #ffffff;
+  opacity: 0.6;
+  transition: none;
 }

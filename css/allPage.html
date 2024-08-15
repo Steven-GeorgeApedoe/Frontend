@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eatery</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("https://t3.ftcdn.net/jpg/00/21/70/82/360_F_21708280_RFKz4O7ImQluB9FgX2mUYFUNDmlLokX6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .contain{
+    width: 420px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+  }
+
+  h1{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #704E2E;
+  }
+
+  .content {
+    text-align: center;
+    font-size: 25px;
+    color: #704E2E;
+    font-weight: revert;
+  }
+
+.buttonsForRegistration p{
+  margin-bottom: 10px;
+}
+  .buttonsForRegistration button{
+    width: 100%;
+    height: 45px;
+    border-color:  #313B3B;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: black;
+    box-shadow: 0 3px #999999;
+  }
+  button:hover{
+    cursor: pointer;
+    background-color: #5b5a5a;
+    color: #ffffff;
+  }
+  button:active{
+    opacity: 0.6;
+    background-color: #704E2E;
+    box-shadow: 0 5px #999;
+    transform: translateY(2px);
+  }
+
+  .buttonsForRegistration i{
+    position: absolute;
+    transform: translate(-390%);
+    margin-top: 10px;
+    color: black;
+  }
+</style>
+</head>
+<body>
+<div class="contain">
+ <form action="">
+   <h1>Eatery</h1>
+   <div class="content">
+     <p>Order Now to get yourself something good today!</p>
+
+     <div class="buttonsForRegistration">
+       <p>Sign up today!</p>
+       <button>Sign Up with Google</button>
+       <i class='bx bxl-google-plus'></i>
+       <br>
+
+       <button>Sign Up with Apple </button>
+       <i class='bx bxl-apple'></i>
+     </div>
+   </div>
+ </form>
+</div>
+</body>
+</html>

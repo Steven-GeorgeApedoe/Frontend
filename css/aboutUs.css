@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+body{
+  /*background: url("https://c4.wallpaperflare.com/wallpaper/80/859/695/coffee-beans-couple-wallpaper-preview.jpg");*/
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10%;
+  background: #5b7091;
+}
+.logo{
+  width: 50px;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.nav_links{
+  list-style:none;
+}
+.nav_links li{
+  display: inline-block;
+  padding: 20px;
+}
+.nav_links li a{
+  text-decoration: none;
+  color: salmon;
+}
+.nav_links li a:hover{
+  color: white;
+  text-decoration: underline;
+}
+i{
+  color: #ffffff;
+}
+i:hover{
+  cursor: pointer;
+  color: salmon;
+}
+.main{
+  background-color: white;
+  overflow: hidden;
+  background: url("https://c4.wallpaperflare.com/wallpaper/80/859/695/coffee-beans-couple-wallpaper-preview.jpg");
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(4px);
+}
+
+.heading h1{
+  text-align: center;
+  color: salmon;
+  font-size: 55px;
+  margin-top: 20px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  width: 60%;
+  height: 70vh;
+}
+.main-content{
+  flex: 0.3;
+  width: 600px;
+  margin: 0px 25px;
+}
+.main-content h2{
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.main-content p{
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: #fff;
+  /*text-align: justify;*/
+}
+
+.main-content button{
+  display: inline-block;
+  background-color: #ff4500;
+  border-radius: 5px;
+  color:#fff;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.main-content button:hover{
+  background-color: #ff6347;
+  transform: scale(1.1);
+}
+
+.main-image{
+  flex: 0.5;
+  width: 600px;
+  margin: auto;
+}
+img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+

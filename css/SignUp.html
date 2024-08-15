@@ -16,27 +16,49 @@
     </div>
 
     <div class="input-box1">
-      <input type="text" placeholder="Create Password" required>
+      <input type="password" placeholder="Create Password" required id="myInput">
       <i class='bx bxs-lock-alt'></i>
+<!--      <input type="checkbox" onclick="passCheck()">Show Password-->
     </div>
 
     <div class="input-box1">
-      <input type="text" placeholder="Repeat password" required>
+      <input type="password" placeholder="Repeat password" required id="myInput2">
       <i class='bx bxs-lock-alt'></i>
     </div>
 
+    <div class="passCheck">
+      <label> <input type="checkbox" onclick="passCheck()">Show Password</label>
+    </div>
+
+<!--A checkbox for autofill login-->
     <div class="remember">
       <label><input type="checkbox">Remember me</label>
     </div>
 
+<!--  Script here-->
+    <script>
+      function  passCheck(){
+        var x = document.getElementById('myInput');
+        var y = document.getElementById('myInput2');
+        if (x.type && y.type ==="password"){
+          x.type = "text";
+          y.type = "text";
+        } else{
+          x.type= "password";
+          y.type= "password";
+        }
+      }
+    </script>
+
+    <!--Section for the icons-->
     <div class="icons">
       <p>Sign in using</p>
-      <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-      <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-      <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+      <a href="https://www.facebook.com/signup" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+      <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="https://x.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
     </div>
 
-    <button type="submit" class="button">Sign Up</button>
+    <button type="submit" class="button"><a href="http://localhost:63342/Simple-Login/Login/Simple-Login/index.html?_ijt=c156bu720a22kqjkf2eivd48np" target="_blank"></a>Sign Up</button>
 
     <script src="js/app.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
