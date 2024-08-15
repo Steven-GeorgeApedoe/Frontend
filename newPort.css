@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("https://wallpapercave.com/wp/wp9314293.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(3px);
+  height: 100vh;
+  font-family: "Agency FB", sans-serif;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background: transparent;
+}
+.logo{
+  width: 90px;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.nav_links{
+  list-style:none;
+}
+.nav_links li{
+  display: inline-block;
+  padding: 20px;
+}
+.nav_links li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+.nav_links li a:hover{
+  color: salmon;
+}
+.ul2{
+color: white;
+  margin-left: 80%;
+  list-style: none;
+}
+.ul2 li{
+  display: flex;
+}
+
+.main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+}
+
+.info{
+  margin-left: 7%;
+  margin-top: 5%;
+}
+.info h1{
+  font-size: 35px;
+  letter-spacing: 10px;
+  color: #fff;
+}
+.info h3{
+  letter-spacing: 2px;
+  line-height: 24px;
+  font-size: 18px;
+  color: #fff;
+
+}
+.info span{
+  color: salmon;
+}
+
+ button{
+  margin-left: 40px;
+   border: solid #fff;
+   border-radius: 5px;
+  width: 30%;
+  height: 45px;
+  margin-top: 10px;
+  background-color: transparent;
+   box-shadow: 0 5px #666;
+}
+
+ button:hover{
+  opacity: 0.7;
+  cursor: pointer;
+  background-color: salmon;
+}
+ button:active{
+   background-color: lightblue;
+   box-shadow: 0 3px #666;
+   transform: translateY(4px);
+ }
+
+ .image{
+   width: 30%;
+   height: 60%;
+   position: absolute;
+   right: 200px;
+   bottom: 200px;
+ }
+.social_icons a{
+  text-decoration: none;
+  color:#fff;
+}
+ .social_icons ion-icon {
+   margin-top: 20px;
+   margin-left: 50px;
+   font-size: 30px;
+   transition: 2s ease;
+ }
+
+.social_icons ion-icon:hover {
+  color: salmon;
+}
+.social_icons ion-icon:active{
+  color: #b3d4fc;
+}
+
+

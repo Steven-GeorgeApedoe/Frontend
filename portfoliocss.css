@@ -2,12 +2,15 @@
   margin: 0;
   padding: 0;
 }
-.main{
-  width: 100%;
-  background: url("https://meshdesignstudio.com/wp-content/uploads/2018/02/mesh-background-portfolio-lglines.jpg");
+body{
+  background-image: url("https://img.freepik.com/free-vector/3d-style-black-background-with-paper-layer_206725-669.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722816000&semt=ais_hybrid");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  backdrop-filter: blur(5px);
+}
+.main{
+  width: 100%;
   height: 100vh;
   position: relative;
   font-family: sans-serif;
@@ -22,8 +25,9 @@
 }
 
 .logo{
+  margin-top: 5px;
   width: 160px;
-  height: 140px;
+  height: 160px;
   cursor: pointer;
 
 }
@@ -32,6 +36,7 @@ ul{
 
 }
  ul li{
+   margin-top: 15px;
   list-style: none;
   display: inline-block;
   padding: 10px 16px;
@@ -41,7 +46,7 @@ ul{
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
-  color: darkslateblue;
+  color: #fff;
   margin-top: -3%;
 }
 ul li a:hover{
@@ -53,28 +58,36 @@ ul li a:hover{
 }
 .info h1{
   font-size: 65px;
-  color: rgb(36,32,30);
+  color: rgb(192, 190, 190);
 }
 .info h3{
   font-size: 18px;
   letter-spacing: 1px;
   line-height: 24px;
+  color: rgb(192, 190, 190);
 }
 .info span{
   color: rgb(230,104,59);
 }
-.info a{
+.info a button{
+  box-shadow: 0 3px #666;
   text-decoration: none;
   color: #fff;
-  background: rgb(36,32, 30);
+  background: rgb(230,104,59);
   margin: 26px 0;
   padding: 10px 18px;
   border-radius: 10px;
   display: inline-block;
   transition: .4s ease;
 }
-.info a:hover{
-  background: #3939f6;
+.info button:hover{
+  cursor: pointer;
+  background: rgb(141, 71, 45);
+}
+.info button:active{
+  opacity: 0.7;
+  transform: translateY(5px);
+  box-shadow: 0 1px #666;
 }
 .image{
   width: 30%;
@@ -89,7 +102,7 @@ ul li a:hover{
   left: 40%;
   transform: translate(-50%);
   bottom: 0;
-  transition: left 2s ease;
+  transition: left  2s ease;
 }
 .image:hover.pic{
   left: 55%;
@@ -100,17 +113,12 @@ ul li a:hover{
 }
 .icons ion-icon{
   margin-left: 7%;
-  color: #000;
+  color: #ffffff;
   margin-right: -60px;
   font-size: 40px;
-  transition: 4s ease;
+  /*transition: 4s ease;*/
 }
 .icons ion-icon:hover{
   color: rgb(59,174,209);
 }
-.myskillslist ul li {
-  display: block;
-}
-.about{
 
-}
