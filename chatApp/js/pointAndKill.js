@@ -13,3 +13,4 @@ const Student5 = new student("Emily", "female", 5.11, 58)
 
 console.log(student1.name+ " is "+ student1.sex+ " and "+student1.heightInFeet+ " in feet")
 
+
